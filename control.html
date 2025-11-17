@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="control-root" lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Twitch Chat Counter — Control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="control-page">
+  <div id="app">
+    <div class="panel">
+      <label>Channel (без #):
+        <input id="channel" placeholder="your_channel" />
+      </label>
+      <label>Слова/эмодзи (через запятую):
+        <input id="terms" placeholder="gg, ABOBA" />
+      </label>
+      <div class="row">
+        <button id="connectBtn">Connect</button>
+        <button id="disconnectBtn" disabled>Disconnect</button>
+        <button id="resetBtn">Reset (Ctrl+Alt+R)</button>
+      </div>
+      <div class="status" id="status">Disconnected</div>
+    </div>
+  </div>
+  <script src="./control.js"></script>
+</body>
+</html>
